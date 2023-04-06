@@ -1,6 +1,7 @@
 package com.site.blog.my.core.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Date;
 

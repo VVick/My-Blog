@@ -116,30 +116,7 @@
     </insert>
     <update id="updateByPrimaryKeySelective" parameterType="com.site.blog.my.core.entity.BlogLink">
         update tb_link
-        <set>
-            <if test="linkType != null">
-                link_type = #{linkType,jdbcType=TINYINT},
-            </if>
-            <if test="linkName != null">
-                link_name = #{linkName,jdbcType=VARCHAR},
-            </if>
-            <if test="linkUrl != null">
-                link_url = #{linkUrl,jdbcType=VARCHAR},
-            </if>
-            <if test="linkDescription != null">
-                link_description = #{linkDescription,jdbcType=VARCHAR},
-            </if>
-            <if test="linkRank != null">
-                link_rank = #{linkRank,jdbcType=INTEGER},
-            </if>
-            <if test="isDeleted != null">
-                is_deleted = #{isDeleted,jdbcType=TINYINT},
-            </if>
-            <if test="createTime != null">
-                create_time = #{createTime,jdbcType=TIMESTAMP},
-            </if>
-        </set>
-        where link_id = #{linkId,jdbcType=INTEGER}
+         -
     </update>
     <update id="updateByPrimaryKey" parameterType="com.site.blog.my.core.entity.BlogLink">
     update tb_link

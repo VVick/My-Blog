@@ -58,6 +58,7 @@ public class BlogController {
         return "admin/blog";
     }
 
+
     @GetMapping("/blogs/edit")
     public String edit(HttpServletRequest request) {
         request.setAttribute("path", "edit");
